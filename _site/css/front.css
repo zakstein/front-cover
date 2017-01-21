@@ -1,7 +1,7 @@
 body {
     font-family: 'Open Sans',Helvetica,Arial,sans-serif;
     background-color: rgba(0, 0, 0, 0.9);
-    position: absolute; 
+    position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
@@ -17,6 +17,17 @@ body {
     position: fixed;
     top: 0;
     left: 0;
+}
+#fullscreen-overlay {
+    z-index: -998;
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 #avatar {
     height: 180px;
@@ -38,9 +49,7 @@ h3 {
     font-weight: thin;
 }
 .content {
-    padding-top: 100px;
-    padding-bottom: 40px;
-    background-color: rgba(0, 0, 0, 0.5);
+    padding: 100px 3px 40px 3px;
     text-align: center;
 }
 ul {
